@@ -25,9 +25,9 @@ function clique() {
     document.getElementById("lista").appendChild(novoitemli);
 
     document.getElementById("novoitembutton"+c).onclick = function() {
-        const list = this;
-        const pai = list.parentNode
-        const avo = pai.parentNode
+        const filho = this;
+        const pai = list.parentNode;
+        const avo = pai.parentNode;
         avo.removeChild(pai);
         document.getElementById("item").focus(); 
     }
